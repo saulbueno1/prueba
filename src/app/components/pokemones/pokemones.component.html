@@ -1,0 +1,33 @@
+
+<div class="box">
+    <h2>Pokédex</h2>
+    <h3 class="name-pokemon">{{ namePokemon | uppercase }}</h3>
+    <h2>{{ id }}</h2>
+    <div class="box-pokemon">
+        <img class="first-image" src="{{ imagenPokemonFront }}" alt="">
+    </div>
+    <h2>Nombre o número</h2>
+    <div class="box-inputs">
+        <input [(ngModel)]=name type="text" placeholder="">
+        <p class="aviso">Busca un Pokémon por su nombre o usando su número de la Pokédex Nacional</p>
+    </div>
+    <button (click)=getSearchPokemon()>Buscar Pokemon</button>
+    <ul class="box-imagen">
+        <li><img src="{{ imagenPokemonFront }}" alt=""></li>
+        <li><img src="{{ imagenPokemonBack }}" alt=""></li>
+        <li><img src="{{ imagenPokemonFrontB }}" alt=""></li>
+        <li><img src="{{ imagenPokemonBackB }}" alt=""></li>
+    </ul>
+</div>
+<div class="container">
+    <input type="checkbox" id="check">
+    <div class="redes">
+        <a href="#" class="">a</a>
+        <a href="#" class="">b</a>
+        <a href="#" class="">c</a>
+        <a href="#" class="">d</a>
+    </div>
+    <div class="otro">
+        <label for="check" class="boton-check">*</label>
+    </div>
+</div>

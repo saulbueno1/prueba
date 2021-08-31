@@ -1,0 +1,242 @@
+// Estilos pokedex
+.box{
+    background: rgb(206, 17, 49);
+    border: 3px solid white;
+    height: 640px;
+    width: 490px;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+    margin: 0 auto;
+}
+
+.box .box-pokemon{
+    border: solid white;
+    background-color: gray;
+    height: 200px;
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 10px 10px 10px 70px;
+}
+
+ .first-image{
+    width: 50% !important;
+}
+
+div .box-imagen{
+    padding-right: 38px;
+}
+
+.box .name-pokemon{
+    font-weight: bold;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.box .box-inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box .aviso{
+    font-size: 13px;
+    color: white;
+    width: 230px;
+    background: rgb(77, 173, 91);
+    margin-left: 10px;
+    padding: 2px;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    list-style: none;
+    margin-left: 5px;
+}
+button{
+    background: rgb(249, 238, 96);
+    border: 3px solid rgb(249, 238, 96);
+    width: 140px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+button:hover{
+    background-color:rgb(77, 173, 91);
+    color: white;
+    font-weight: bold;
+    width: 140px;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+input {
+    width: 185px;
+    height: 32px;
+    text-align: center;
+}
+
+input::placeholder{
+    text-align: center;
+}
+
+h2{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+// fin podekex
+
+
+// Responsive
+// @media screen and (max-width:1024px)  {
+
+//     .box{
+//     position: absolute;
+//     top: 22%;
+//     left: 27%;  
+//     height: 660px;
+//     }
+
+//     .container{
+//         display: none;
+//     }
+// }
+@media screen and (max-width:768px) and (min-width:415px) {
+    .box{
+    position: absolute;
+    top: 22%;
+    left: 18%;  
+    height: 660px;
+    }
+
+    .box .box-inputs{
+    display: block; 
+    }
+
+    .box .aviso{
+    margin: 0 auto;
+    margin-top: 10px;
+    }
+    .container{
+        display: none;
+    }
+}
+
+@media screen and (max-width:414px){
+    .box{
+    position: absolute;
+    top: 10%;
+    left: 7.5%;
+    width: 345px;
+    height: 600px;
+    }
+
+    .box .box-pokemon{
+    width: 300px;
+    }
+
+    .first-image{
+    width: 66% !important;
+    }
+
+    .aviso{
+    display: none;
+    }
+
+    .box-imagen img{
+    width: 62px;
+    }
+    .container{
+        display: none;
+    }
+}
+
+@media screen and (max-width:375px){
+    .box{
+    position: absolute;
+    left: 3%;
+    top: 5%;
+    }
+    .container{
+    display: none;
+    }
+}
+
+@media screen and (max-width:360px){
+    .box{
+    left: 1.5%;
+    }
+    .container{
+    display: none;
+    }
+}
+
+@media screen and (max-width:320px){
+    .box{
+    width: 294px;
+    left: 3%;
+    }
+
+    .box .box-pokemon{
+    width: 273px;
+    }
+
+    ul{
+    justify-content: center;
+    }
+    .container{
+     display: none;
+    }
+}
+// fin responsive
+
+// boton flotante
+#check{
+    display: none;
+}
+
+.container{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.redes a, .otro{
+    display: block;
+    text-decoration: none;
+    background-color: rgb(206, 17, 49);
+    color: white;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+    transition: all 500ms ease;
+}
+
+.redes a:hover{
+    background-color:white;
+    color: rgb(206, 17, 49);
+}
+
+.redes a {
+    margin-bottom: -15px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#check:checked~ .redes a{
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.boton-check{
+    cursor: pointer;
+    font-size: 23px;
+}
